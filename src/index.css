@@ -76,12 +76,12 @@ a {
       -ms-user-select: none;
           user-select: none;
   color: #1f1534;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .Header .links .selected {
   color: #1f1534;
-  opacity: 100%;
+  opacity: 1;
   font-weight: bold;
 }
 
@@ -179,7 +179,7 @@ a {
   margin-top: 17px;
   line-height: 30px;
   font-weight: 300;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .Home .container .left-button .btn {
@@ -244,7 +244,7 @@ a {
   margin: 4% 0;
   line-height: 30px;
   font-weight: 300;
-  opacity: 50%;
+  opacity: 0.5;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -280,7 +280,7 @@ a {
 }
 
 .Home .container2 .cards .card .data p {
-  opacity: 50%;
+  opacity: 0.5;
   line-height: 30px;
   margin-bottom: 10px;
 }
@@ -331,7 +331,7 @@ a {
 
 .Home .container3 .cards .data p {
   margin: 5% 0 8% 0;
-  opacity: 50%;
+  opacity: 0.5;
   width: 80%;
   line-height: 30px;
 }
@@ -418,7 +418,7 @@ a {
   font-size: 18px;
   width: 70%;
   line-height: 30px;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .Home .container4 .left .bottom button {
@@ -551,7 +551,7 @@ a {
 }
 
 .Home .container5 .navigate .back-arrow {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .Home .container5 .navigate .slider {
@@ -573,11 +573,11 @@ a {
   height: 10px;
   background: #4285f4;
   border-radius: 50%;
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .Home .container5 .navigate .slider .selected {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .Slider {
@@ -985,7 +985,7 @@ h2.bar {
   }
   .Join .circle-grid {
     z-index: -1;
-    opacity: 40%;
+    opacity: 0.4;
     left: auto;
     right: -3vw;
     top: 20vh;
@@ -1011,7 +1011,7 @@ h2.bar {
   }
   .Team .circle-grid {
     z-index: -1;
-    opacity: 40%;
+    opacity: 0.4;
     left: auto;
     right: -3vw;
     top: 20vh;
@@ -1072,7 +1072,7 @@ h2.bar {
     position: absolute;
     left: -12%;
     z-index: -10;
-    opacity: 80%;
+    opacity: 0.8;
     height: 100px;
   }
   .Home .container {
@@ -1120,7 +1120,7 @@ h2.bar {
     margin-top: 8rem;
   }
   .Home .container3 .dot-grid {
-    opacity: 30%;
+    opacity: 0.3;
     z-index: -1;
     top: 482vh;
     left: 3%;
@@ -1161,7 +1161,7 @@ h2.bar {
     margin-top: -120%;
     z-index: -20;
     left: 0;
-    opacity: 20%;
+    opacity: 0.2;
     width: 100%;
   }
   .Home .container5 {
