@@ -91,7 +91,12 @@ const teamMembers = [
 		position: "Editor In Chief",
 		image:
 			"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/vertika_mittal_nHc30SY.jpg",
-		links: {},
+		links: {
+			instagram: "www.instagram.com/mittalvertika1/",
+			github: "github.com/VertikaMittal",
+			linkedin: "www.linkedin.com/in/vertika-mittal-0856531b5/",
+			medium: "vertika-mittal.medium.com",
+		},
 	},
 	{
 		name: "Ayush Kashyap",
@@ -117,6 +122,14 @@ const teamMembers = [
 		position: "Student Representative",
 		image:
 			"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/aarushi_chopra_70XKObO.jpg",
+		links: {
+			instagram: "https://www.instagram.com/aarushi_ac/  ",
+			github: "https://github.com/Aarushichopra   ",
+			linkedin:
+				"https://www.linkedin.com/in/aarushi-chopra-726660191/   ",
+
+			medium: "medium.com/@me.aarushichopra",
+		},
 	},
 	{
 		name: "Tanya Chetna Vaish",
