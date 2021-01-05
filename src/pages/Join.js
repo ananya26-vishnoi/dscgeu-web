@@ -88,7 +88,8 @@ const Register = ({ history }) => {
 							Join us on our discord server if you are highly
 							enthusiastic
 						</p>
-						<p>Join our discord server for more awesomenewss</p>
+						<p>Join our discord server for more awesomenews</p>
+						<p>This step is OPTIONAL</p>
 						<a
 							href="https://discord.gg/5VuSjRH4Ba"
 							target="_blank"

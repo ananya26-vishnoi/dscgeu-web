@@ -24,18 +24,34 @@ const teamMembers = [
 		position: "Student Mentor",
 		image:
 			"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/anant_jakhmola.jpg",
+		links: {
+			github: "https://github.com/anantjakhmola",
+			linkedin: "https://linkedin.com/in/anantjakhmola9",
+			medium: "https://anantjakhmola9.medium.com/",
+		},
 	},
 	{
 		name: "Kartikay Sawhney",
 		position: "Student Mentor",
 		image:
 			"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/kartikay_sawhney_r6gmlMq.jpg",
+		links: {
+			instagram: "https://www.instagram.com/kartikay_sawhney/",
+			github: "https://github.com/kartikay1506",
+			linkedin: "https://www.linkedin.com/in/kartikay-sawhney-1b5b83175/",
+			medium: "https://medium.com/@kartikaysawhney1506",
+			devto: "https://dev.to/kartikay1506",
+		},
 	},
 	{
 		name: "Aastha Bist",
 		position: "Student Mentor",
 		image:
 			"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/aastha_bist.jpg",
+		links: {
+			github: "http://github.com/bistaastha",
+			linkedin: "https://www.linkedin.com/in/bistaastha",
+		},
 	},
 	{
 		name: "Shashwat Joshi",
@@ -75,12 +91,19 @@ const teamMembers = [
 		position: "Editor In Chief",
 		image:
 			"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/vertika_mittal_nHc30SY.jpg",
+		links: {},
 	},
 	{
 		name: "Ayush Kashyap",
 		position: "Technical Lead",
 		image:
 			"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/ayush_kashyap_25baP18.jpg",
+		links: {
+			website: "http://ayushk.dx.am/",
+			instagram: "https://instagram.com/ayushhhkk",
+			github: "https://github.com/ayushk01",
+			linkedin: "https://linkedin.com/in/ayushk01",
+		},
 	},
 	{
 		name: "Kumar Harsh",
@@ -99,6 +122,12 @@ const teamMembers = [
 		position: "Technical Lead",
 		image:
 			"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/tanya_chetna_vaish_Hc22Ndj.jpeg",
+		links: {
+			instagram: "https://www.instagram.com/tanya_chetna_vaish/",
+			github: "https://github.com/TanyaChetnaVaish",
+			linkedin:
+				"https://www.linkedin.com/in/tanya-chetna-vaish-39902a1a2/",
+		},
 	},
 	{
 		name: "Ria Goel",
