@@ -1,29 +1,28 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-
-//Importing Pages
-import Home from "./pages/Home";
-import Register from "./pages/Register";
-import Join from "./pages/Join";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //Importing Components
 import Footer from "./components/Footer";
-import Domains from "./pages/Domains";
-import Why from "./pages/Why";
+import Header from "./components/Header";
+
+//Importing Pages
+import Home from "./pages/Home";
+import Team from "./pages/Team";
+import Join from "./pages/Join";
 import RedirectLinks from "./pages/RedirectLinks";
 
 const App = () => {
 	return (
 		<div className="App">
 			<Router>
+				<Header />
 				<Switch>
 					<Route path="/" exact component={Home} />
-					<Route path="/register" exact component={Register} />
 					<Route path="/join" exact component={Join} />
-					<Route path="/why" exact component={Why} />
-					<Route path="/domains" exact component={Domains} />
-					<Route path="/induction" exact component={RedirectLinks} />
+					<Route path="/team" exact component={Team} />
+					<Route path="/event" exact component={RedirectLinks} />
 				</Switch>
+				<Footer />
 			</Router>
 		</div>
 	);
