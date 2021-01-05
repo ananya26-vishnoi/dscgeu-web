@@ -1,5 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaLaptopCode } from "react-icons/fa";
+import { RiInstagramLine } from "react-icons/ri";
 
 const Home = ({ history }) => {
 	const provideData = [
@@ -7,63 +9,66 @@ const Home = ({ history }) => {
 			icon: "icon1.svg",
 			title: "Credits",
 			text:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis suspendisse nisi ultrices.",
+				"Wanna go for personalized learning but a paid one? This is what you recieve by participating in hands on training workshops in order to do that at absolutely no cost!",
 		},
 		{
 			icon: "icon2.svg",
 			title: "Guidance",
 			text:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis suspendisse nisi ultrices.",
+				"The major stuff that goes into learning has this back hand i.e. proper guidance from the already experienced lot always up for support!",
 		},
 		{
 			icon: "icon3.svg",
 			title: "Hands on Workshops",
 			text:
-				"We here at DSC GEU provide you with theoretical as well as practical knowledge with amazing  and interactive workshops.",
+				"Providing you with theoretical as well as practical knowledge with interactive,hands on and brainstorming workshops and sessions.",
 		},
 		{
 			icon: "icon4.svg",
 			title: "Info Sessions",
 			text:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis suspendisse nisi ultrices.",
+				"To boost up your knowledge we have exclusive info sessions! These provide an insight into various tech stuff you wouldn't wanna miss!",
 		},
 		{
 			icon: "icon5.svg",
 			title: "Resume",
 			text:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis suspendisse nisi ultrices.",
+				"The catchy portion which gleams into the eyes! Taking part in workshops and gaining experience as well as knowledge will help you build this section to the fullest!",
 		},
 		{
 			icon: "icon6.svg",
 			title: "Goodies",
 			text:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis suspendisse nisi ultrices.",
+				"The cool schwags no one would like to give away! So there's loads of opportunity to grab them while you learn the buzziest things in the workshops",
 		},
 	];
 
 	const articleData = [
 		{
-			img: "img1.svg",
+			img:
+				"https://miro.medium.com/max/802/1*UV6lmYquXIyAYfszxXuS4A.jpeg",
 			title: "Tips for first year students And must do",
 			text:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet... ",
-			link: "#",
+			link:
+				"https://anantjakhmola9.medium.com/here-is-all-you-need-to-know-if-you-are-studying-computer-science-c2df28dca81b",
 		},
 		{
-			img: "img2.svg",
-			title: "Tips for first year students And must do",
+			img: "https://miro.medium.com/max/465/0*XpbEAuFXeifCru4T",
+			title: "Benefits of your college email and id",
 			text:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet... ",
-			link: "#",
-		},
-		{
-			img: "img3.svg",
-			title: "Tips for first year students And must do",
-			text:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet... ",
-			link: "#",
+				"Whenever we try to search perks for being in college we do miss something very special, and this is none other than ...",
+			link:
+				"https://vertika-mittal.medium.com/want-to-upgrade-your-apps-to-pro-membership-for-free-all-you-need-is-a-student-account-53197036a096",
 		},
 	];
+
+	const links = {
+		website: "https://dsc.community.dev/graphic-era",
+		instagram: "https://instagram.com/dsc.geu",
+		github: "https://github.com/dscgeu",
+		linkedin: "https://www.linkedin.com/company/dscgeu",
+	};
 
 	return (
 		<div className="Home">
@@ -109,6 +114,54 @@ const Home = ({ history }) => {
 				</div>
 			</div>
 
+			<div className="dsc-social-links">
+				<div className="bar-line"></div>
+				{links.website && (
+					<FaLaptopCode
+						size="2rem"
+						style={{
+							cursor: "pointer",
+							marginLeft: "2rem",
+							color: "#3b3b3b",
+						}}
+						onClick={() => window.open(links.website)}
+					/>
+				)}
+				{links.github && (
+					<FaGithub
+						size="2rem"
+						style={{
+							cursor: "pointer",
+							marginLeft: "1rem",
+							color: "#333",
+						}}
+						onClick={() => window.open(links.github)}
+					/>
+				)}
+				{links.instagram && (
+					<RiInstagramLine
+						size="2rem"
+						style={{
+							cursor: "pointer",
+							marginLeft: "1rem",
+							color: "#DF3289",
+						}}
+						onClick={() => window.open(links.instagram)}
+					/>
+				)}
+				{links.linkedin && (
+					<FaLinkedin
+						size="2rem"
+						style={{
+							cursor: "pointer",
+							color: "#4285f4",
+							marginLeft: "1rem",
+						}}
+						onClick={() => window.open(links.linkedin)}
+					/>
+				)}
+			</div>
+
 			<div className="container2">
 				<img
 					className="home-bg2"
@@ -149,7 +202,7 @@ const Home = ({ history }) => {
 				</div>
 			</div>
 
-			<div className="container3">
+			{/* <div className="container3">
 				<div className="head">
 					<center>
 						<h1>Check out our latest articles</h1>
@@ -167,15 +220,21 @@ const Home = ({ history }) => {
 						<div className="card">
 							<div className="icon">
 								<img
+									style={{
+										maxWidth: "25rem",
+										maxHeight: "20rem",
+										borderTopLeftRadius: "1rem",
+										borderTopRightRadius: "1rem"
+									}}
 									className="card-img"
 									alt="card"
-									src={require(`../assets/vectors/img/${card.img}`)}
+									src={card.img}
 								/>
 							</div>
 							<div className="data">
 								<h2>{card.title}</h2>
 								<p>{card.text}</p>
-								<a href="#">
+								<a href={card.link}>
 									Read More{" "}
 									<img
 										src={require("../assets/vectors/arrow.svg")}
@@ -192,14 +251,14 @@ const Home = ({ history }) => {
 					alt="bubble2"
 				/>
 
-				{/* <div className="view-all">
+				<div className="view-all">
 					<center>
 						<button>
 							<h4>View all</h4>
 						</button>
 					</center>
-				</div> */}
-			</div>
+				</div> 
+			</div> */}
 
 			<div className="container4">
 				<div className="left">

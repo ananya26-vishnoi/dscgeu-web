@@ -230,6 +230,9 @@ a {
 				z-index: 99;
 				box-shadow: 0px 0px 15px -12px rgba(0, 0, 0, 0.75);
 				.icon {
+					.card-img {
+						width: 100% !important;
+					}
 					img {
 						margin: 6% 0;
 						max-width: 90%;
@@ -270,6 +273,7 @@ a {
 		}
 
 		.cards {
+			grid-template-columns: repeat(3, 1fr) !important;
 			.card {
 				background: #fff;
 				border-radius: 20px;
@@ -739,11 +743,11 @@ a {
 					color: #474747;
 				}
 				.social-links {
-          margin-top: 2rem;
-          padding: 0 2rem;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
+					margin-top: 2rem;
+					padding: 0 2rem;
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
 				}
 			}
 		}
@@ -754,9 +758,26 @@ a {
 h2.bar {
 	@include underscore();
 }
+
+.dsc-social-links {
+	margin-right: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	.bar-line {
+		width: 100%;
+		height: 0.1rem;
+		background: #bee2ff;
+	}
+}
+
 // MEDIA QUERIES
 
 @media only screen and (max-width: 600px) {
+	.dsc-social-links {
+		margin-top: 3rem;
+		margin-bottom: 8rem;
+	}
 	.Join {
 		.circle-grid {
 			z-index: -1;
@@ -860,8 +881,8 @@ h2.bar {
 
 		.container2 {
 			.home-bg2 {
-        top: 140vh;
-        z-index: -1;
+				top: 140vh;
+				z-index: -1;
 				height: 500px;
 				width: 100%;
 			}
@@ -872,10 +893,10 @@ h2.bar {
 		}
 
 		.container3 {
-      margin-top: 8rem;
+			margin-top: 8rem;
 			.dot-grid {
-        opacity: 30%;
-        z-index: -1;
+				opacity: 30%;
+				z-index: -1;
 				top: 482vh;
 				left: 3%;
 			}
@@ -887,8 +908,11 @@ h2.bar {
 				flex-direction: column;
 				.card {
 					width: 100%;
-					.card-img {
-						width: 100%;
+					.icon {
+						.card-img {
+							width: 100% !important;
+							max-width: 30rem;
+						}
 					}
 				}
 			}
@@ -900,7 +924,7 @@ h2.bar {
 		}
 
 		.container4 {
-      margin-top: 8rem;
+			margin-top: 8rem;
 			flex-direction: column;
 			.right {
 				img {
