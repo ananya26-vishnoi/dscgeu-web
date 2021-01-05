@@ -19,7 +19,7 @@ const Home = ({ history }) => {
 			icon: "icon3.svg",
 			title: "Hands on Workshops",
 			text:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis suspendisse nisi ultrices.",
+				"We here at DSC GEU provide you with theoretical as well as practical knowledge with amazing  and interactive workshops.",
 		},
 		{
 			icon: "icon4.svg",
@@ -132,7 +132,7 @@ const Home = ({ history }) => {
 
 				<div className="cards">
 					{provideData.map((card) => (
-						<div className="card">
+						<div className="card" key={card.title}>
 							<center>
 								<div className="icon">
 									<img
@@ -192,13 +192,13 @@ const Home = ({ history }) => {
 					alt="bubble2"
 				/>
 
-				<div className="view-all">
+				{/* <div className="view-all">
 					<center>
 						<button>
 							<h4>View all</h4>
 						</button>
 					</center>
-				</div>
+				</div> */}
 			</div>
 
 			<div className="container4">
@@ -226,7 +226,7 @@ const Home = ({ history }) => {
 				</div>
 			</div>
 
-			<div className="container5">
+			{/* <div className="container5">
 				<img
 					className="bg-topright"
 					src={require("../assets/vectors/dot-grid.svg")}
@@ -282,7 +282,7 @@ const Home = ({ history }) => {
 						alt="forward-arrow"
 					/>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

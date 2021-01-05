@@ -14,12 +14,26 @@ const Footer = ({ history }) => {
 			<div className="right">
 				<h3>Quick Links</h3>
 				<div className="links">
-					<a onClick={() => history.push("/")}>Home</a>
-					<a onClick={() => history.push("/team")}>Team</a>
-					<a onClick={() => history.push("/#what-we-do")}>
+					<a
+						style={{ cursor: "pointer" }}
+						onClick={() => history.push("/")}>
+						Home
+					</a>
+					<a
+						style={{ cursor: "pointer" }}
+						onClick={() => history.push("/team")}>
+						Team
+					</a>
+					<a
+						style={{ cursor: "pointer" }}
+						onClick={() => history.push("/#what-we-do")}>
 						What we do?
 					</a>
-					<a onClick={() => history.push("/join")}>Join Us</a>
+					<a
+						style={{ cursor: "pointer" }}
+						onClick={() => history.push("/join")}>
+						Join Us
+					</a>
 				</div>
 			</div>
 		</div>
