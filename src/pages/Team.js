@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaLaptopCode } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaLaptopCode, FaTwitter } from "react-icons/fa";
 import { RiInstagramLine } from "react-icons/ri";
 import { SiDevDotTo } from "react-icons/si";
 import { AiFillMediumSquare } from "react-icons/ai";
@@ -103,6 +103,7 @@ const teamMembers = [
 			instagram: "https://instagram.com/ayushhhkk",
 			github: "https://github.com/ayushk01",
 			linkedin: "https://linkedin.com/in/ayushk01",
+			twitter: "https://twitter.com/ayushhhkk",
 		},
 	},
 	{
@@ -238,6 +239,18 @@ const Team = ({ history }) => {
 											}}
 											onClick={() =>
 												window.open(links.medium)
+											}
+										/>
+									)}
+									{links.twitter && (
+										<FaTwitter
+											size="1.5rem"
+											style={{
+												cursor: "pointer",
+												color: "#1DA1F2",
+											}}
+											onClick={() =>
+												window.open(links.twitter)
 											}
 										/>
 									)}
