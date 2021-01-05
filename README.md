@@ -1,6 +1,9 @@
-## Official DSC GEU Website Secondary Repo
+## Official DSC GEU Website Repo
 
 - The project is created using create-react-app (SPA).
 - No Backend Attached
 
-Official repo can be found [here][https://github.com/amanjagdev/dscgeu-web]
+## Collaborators
+
+- [Aman Jagdev][https://github.com/amanjagdev]
+- [Ayush Kashyap][https://github.com/ayushk01]
