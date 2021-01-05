@@ -183,6 +183,7 @@ a {
 
 .Home .container .left-button .btn {
   background-color: #4285f4;
+  outline: none;
   border: none;
   color: #fff;
   width: 200px;
@@ -347,6 +348,7 @@ a {
 
 .Home .container3 .view-all button {
   background-color: #4285f4;
+  outline: none;
   border: none;
   color: #fff;
   width: 200px;
@@ -411,6 +413,7 @@ a {
 
 .Home .container4 .left .bottom button {
   background-color: #4285f4;
+  outline: none;
   border: none;
   color: #fff;
   width: 200px;

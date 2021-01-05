@@ -32,6 +32,7 @@ $black: #1f1534;
 // Mixins
 @mixin btn-format {
   background-color: $blue;
+  outline: none;
   border: none;
   color: #fff;
   width: 200px;
