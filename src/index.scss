@@ -655,6 +655,31 @@ a {
 				}
 			}
 		}
+		.get-badge {
+			display: flex;
+			padding: 2rem;
+			border-radius: 1rem;
+			align-items: center;
+			background: lighten($color: $red, $amount: 40);
+			color: darken($red, 2);
+			margin: 1rem;
+			box-shadow: 10px 0px 50px rgba(229, 233, 246, 0.69);
+			.bulb {
+				border-right: solid 0.1rem #474747;
+				padding-right: 1rem;
+			}
+			.text {
+				margin-left: 1.5rem;
+			}
+			.link {
+				padding-top: 0.5rem;
+				a {
+					cursor: pointer;
+					color: #474747;
+					border-bottom: dotted 0.2rem #474747;
+				}
+			}
+		}
 		.cards {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
@@ -773,13 +798,33 @@ h2.bar {
 
 .BadgeCollection {
 	background: #f2f3f5;
+	.coming-soon-container {
+		margin-bottom: 3rem;
+	}
+	.coming-soon-text {
+		margin-left: 0.5rem;
+		font-size: 0.9rem;
+		color: #ea4335;
+		margin-top: 0.5rem;
+	}
+	.coming-soon {
+		width: max-content;
+		padding: 0.5rem 1rem;
+		font-weight: 700;
+		border-radius: 5rem;
+		color: #ea4335;
+		background: lighten($color: #ea433f, $amount: 30);
+	}
 	.container {
+		user-select: none;
 		padding: 5% 15%;
 		display: grid;
 		align-items: center;
 		grid-template-columns: 1fr 1fr;
+
 		.left {
 			.head {
+				filter: blur(0.2rem);
 				h1 {
 					color: $blue;
 					font-weight: 800;
@@ -791,6 +836,7 @@ h2.bar {
 				margin-bottom: 3rem;
 			}
 			.form {
+				filter: blur(0.2rem);
 				&-grp {
 					display: grid;
 					width: 100%;
@@ -844,6 +890,12 @@ h2.bar {
 	.BadgeCollection {
 		.container {
 			grid-template-columns: 1fr;
+			.coming-soon-container {
+				margin-top: 1rem;
+			}
+			.right {
+				grid-row: 1;
+			}
 		}
 	}
 	.dsc-social-links {

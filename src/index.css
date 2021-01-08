@@ -817,6 +817,41 @@ a {
   border-bottom: dotted 0.2rem #474747;
 }
 
+.Join .container .get-badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  border-radius: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fdefee;
+  color: #e93a2c;
+  margin: 1rem;
+  -webkit-box-shadow: 10px 0px 50px rgba(229, 233, 246, 0.69);
+          box-shadow: 10px 0px 50px rgba(229, 233, 246, 0.69);
+}
+
+.Join .container .get-badge .bulb {
+  border-right: solid 0.1rem #474747;
+  padding-right: 1rem;
+}
+
+.Join .container .get-badge .text {
+  margin-left: 1.5rem;
+}
+
+.Join .container .get-badge .link {
+  padding-top: 0.5rem;
+}
+
+.Join .container .get-badge .link a {
+  cursor: pointer;
+  color: #474747;
+  border-bottom: dotted 0.2rem #474747;
+}
+
 .Join .container .cards {
   display: -ms-grid;
   display: grid;
@@ -982,7 +1017,33 @@ h2.bar {
   background: #f2f3f5;
 }
 
+.BadgeCollection .coming-soon-container {
+  margin-bottom: 3rem;
+}
+
+.BadgeCollection .coming-soon-text {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: #ea4335;
+  margin-top: 0.5rem;
+}
+
+.BadgeCollection .coming-soon {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 5rem;
+  color: #ea4335;
+  background: #f9cac9;
+}
+
 .BadgeCollection .container {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   padding: 5% 15%;
   display: -ms-grid;
   display: grid;
@@ -994,6 +1055,8 @@ h2.bar {
 }
 
 .BadgeCollection .container .left .head {
+  -webkit-filter: blur(0.2rem);
+          filter: blur(0.2rem);
   margin-bottom: 3rem;
 }
 
@@ -1005,6 +1068,11 @@ h2.bar {
 
 .BadgeCollection .container .left .head p {
   color: #474747;
+}
+
+.BadgeCollection .container .left .form {
+  -webkit-filter: blur(0.2rem);
+          filter: blur(0.2rem);
 }
 
 .BadgeCollection .container .left .form-grp {
@@ -1070,6 +1138,13 @@ h2.bar {
   .BadgeCollection .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .BadgeCollection .container .coming-soon-container {
+    margin-top: 1rem;
+  }
+  .BadgeCollection .container .right {
+    -ms-grid-row: 1;
+    grid-row: 1;
   }
   .dsc-social-links {
     margin-top: 3rem;

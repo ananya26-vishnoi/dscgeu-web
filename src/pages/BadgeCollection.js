@@ -10,8 +10,19 @@ const BadgeCollection = () => {
 		<div className="BadgeCollection">
 			<div className="container">
 				<div className="left">
+					<div className="coming-soon-container">
+						<div className="coming-soon">COMING SOON</div>
+						<div className="coming-soon-text">
+							You all will be able to claim your badges very soon.{" "}
+							<br />
+							<strong>
+								NOTE : YOU NEED TO HAVE ATTENED ATLEAST ONE
+								EVENT TO CLAIM YOUR BADGE
+							</strong>
+						</div>
+					</div>
 					<div className="head">
-						<h1>Collect your badge now</h1>
+						<h1>Collect your badge</h1>
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing
 							elit. Ducimus excepturi doloremque molestiae modi
@@ -23,6 +34,7 @@ const BadgeCollection = () => {
 						<div className="form-grp">
 							<label htmlFor="fullname">Full Name</label>
 							<input
+								disabled
 								type="text"
 								value={name}
 								onChange={(e) => setName(e.target.value)}
@@ -31,6 +43,7 @@ const BadgeCollection = () => {
 						<div className="form-grp">
 							<label htmlFor="email">Email</label>
 							<input
+								disabled
 								type="email"
 								value={email}
 								onChange={(e) => setEmail(e.target.value)}
@@ -39,6 +52,7 @@ const BadgeCollection = () => {
 						<div className="form-grp">
 							<label htmlFor="profile-link">Profile Link</label>
 							<input
+								disabled
 								type="email"
 								value={profileLink}
 								onChange={(e) => setProfileLink(e.target.value)}
