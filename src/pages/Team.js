@@ -92,10 +92,10 @@ const teamMembers = [
 		image:
 			"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/vertika_mittal_nHc30SY.jpg",
 		links: {
-			instagram: "www.instagram.com/mittalvertika1/",
-			github: "github.com/VertikaMittal",
-			linkedin: "www.linkedin.com/in/vertika-mittal-0856531b5/",
-			medium: "vertika-mittal.medium.com",
+			instagram: "https://instagram.com/mittalvertika1/",
+			github: "https://github.com/VertikaMittal",
+			linkedin: "https://linkedin.com/in/vertika-mittal-0856531b5/",
+			medium: "https://vertika-mittal.medium.com",
 		},
 	},
 	{

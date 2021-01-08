@@ -2,6 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { FaTelegramPlane, FaLightbulb, FaHandPeace } from "react-icons/fa";
 import { RiDiscordFill } from "react-icons/ri";
+import { HiBadgeCheck } from "react-icons/hi";
 
 const Register = ({ history }) => {
 	return (
@@ -106,6 +107,25 @@ const Register = ({ history }) => {
 				<div className="enjoy">
 					<h3>All Steps Complete</h3>
 					<p>🎉You are now a memeber 🎉</p>
+				</div>
+
+				<div className="get-badge">
+					<div className="bulb">
+						<HiBadgeCheck size={50} />
+					</div>
+					<div className="text">
+						<div className="content">
+							If you have been an active member of community, Claim
+							your google dev profile badge
+						</div>
+						<div className="link">
+							<a
+								onClick={() => history.push("/badge")}
+								rel="noopener noreferrer">
+								Claim Badge
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
