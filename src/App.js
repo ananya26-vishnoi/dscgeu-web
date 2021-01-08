@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Team from "./pages/Team";
 import Join from "./pages/Join";
+import BadgeCollection from "./pages/BadgeCollection";
 import RedirectLinks from "./pages/RedirectLinks";
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
 					<Route path="/join" exact component={Join} />
 					<Route path="/team" exact component={Team} />
 					<Route path="/event" exact component={RedirectLinks} />
+					<Route path="/badge" exact component={BadgeCollection} />
 				</Switch>
 				<Footer />
 			</Router>

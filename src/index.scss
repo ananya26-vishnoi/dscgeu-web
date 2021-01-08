@@ -771,9 +771,81 @@ h2.bar {
 	}
 }
 
+.BadgeCollection {
+	background: #f2f3f5;
+	.container {
+		padding: 5% 15%;
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1fr 1fr;
+		.left {
+			.head {
+				h1 {
+					color: $blue;
+					font-weight: 800;
+					margin-bottom: 1rem;
+				}
+				p {
+					color: #474747;
+				}
+				margin-bottom: 3rem;
+			}
+			.form {
+				&-grp {
+					display: grid;
+					width: 100%;
+					grid-template-columns: 1fr 2fr;
+					margin-bottom: 1rem;
+					align-items: center;
+					label {
+						font-weight: 700;
+					}
+					input {
+						outline: none;
+						padding: 0.5rem 1rem;
+						border: none;
+						color: $blue;
+						border-radius: 5rem;
+						background: lighten($color: $blue, $amount: 32);
+					}
+					input:focus {
+						border: solid 0.1rem $blue;
+					}
+				}
+				button {
+					outline: none;
+					border: none;
+					border-radius: 5rem;
+					color: white;
+					background: $blue;
+					padding: 0.7rem 1.4rem;
+					font-weight: 700;
+				}
+				ul {
+					margin-top: 1rem;
+					margin-bottom: 2rem;
+					color: #474747;
+					font-size: 0.9rem;
+					text-decoration: none;
+				}
+			}
+		}
+		.right {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
 // MEDIA QUERIES
 
 @media only screen and (max-width: 600px) {
+	.BadgeCollection {
+		.container {
+			grid-template-columns: 1fr;
+		}
+	}
 	.dsc-social-links {
 		margin-top: 3rem;
 		margin-bottom: 8rem;
