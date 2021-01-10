@@ -1018,14 +1018,7 @@ h2.bar {
 }
 
 .BadgeCollection .coming-soon-container {
-  margin-bottom: 3rem;
-}
-
-.BadgeCollection .coming-soon-text {
-  margin-left: 0.5rem;
-  font-size: 0.9rem;
-  color: #ea4335;
-  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .BadgeCollection .coming-soon {
@@ -1035,8 +1028,7 @@ h2.bar {
   padding: 0.5rem 1rem;
   font-weight: 700;
   border-radius: 5rem;
-  color: #ea4335;
-  background: #f9cac9;
+  color: #0f9d58;
 }
 
 .BadgeCollection .container {
@@ -1055,8 +1047,6 @@ h2.bar {
 }
 
 .BadgeCollection .container .left .head {
-  -webkit-filter: blur(0.2rem);
-          filter: blur(0.2rem);
   margin-bottom: 3rem;
 }
 
@@ -1068,11 +1058,6 @@ h2.bar {
 
 .BadgeCollection .container .left .head p {
   color: #474747;
-}
-
-.BadgeCollection .container .left .form {
-  -webkit-filter: blur(0.2rem);
-          filter: blur(0.2rem);
 }
 
 .BadgeCollection .container .left .form-grp {
@@ -1120,6 +1105,10 @@ h2.bar {
   color: #474747;
   font-size: 0.9rem;
   text-decoration: none;
+}
+
+.BadgeCollection .container .left .form ul li {
+  margin: 10px 0;
 }
 
 .BadgeCollection .container .right {
