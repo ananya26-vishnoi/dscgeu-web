@@ -11,6 +11,9 @@ import Team from "./pages/Team";
 import Join from "./pages/Join";
 import BadgeCollection from "./pages/BadgeCollection";
 import RedirectLinks from "./pages/RedirectLinks";
+import PrivateRoute from "./components/PrivateRoute";
+import BadgeLogin from "./pages/BadgeAdmin/BadgeLogin";
+import BadgeAdmin from "./pages/BadgeAdmin/BadgeAdmin";
 
 const App = () => {
 	return (
@@ -23,6 +26,12 @@ const App = () => {
 					<Route path="/team" exact component={Team} />
 					<Route path="/event" exact component={RedirectLinks} />
 					<Route path="/badge" exact component={BadgeCollection} />
+					<Route path="/badgelogin" exact component={BadgeLogin} />
+					<PrivateRoute
+						path="/badgeadmin"
+						exact
+						component={BadgeAdmin}
+					/>
 				</Switch>
 				<Footer />
 			</Router>

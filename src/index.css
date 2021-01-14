@@ -1123,6 +1123,115 @@ h2.bar {
           justify-content: center;
 }
 
+.BadgeLogin {
+  padding: 5% 15%;
+}
+
+.BadgeLogin h1 {
+  text-align: center;
+  color: #4285f4;
+  margin-bottom: 3rem;
+}
+
+.BadgeLogin form {
+  padding: 3rem;
+  background: #bee2ff;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+
+.BadgeLogin .form-grp {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  margin-bottom: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.BadgeLogin .form-grp label {
+  font-weight: 700;
+}
+
+.BadgeLogin .form-grp input {
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #4285f4;
+  border-radius: 5rem;
+  background: #dce9fd;
+}
+
+.BadgeLogin .form-grp input:focus {
+  border: solid 0.1rem #4285f4;
+}
+
+.BadgeLogin button {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  color: white;
+  background: #4285f4;
+  padding: 0.7rem 1.4rem;
+  font-weight: 700;
+}
+
+.BadgeAdmin {
+  padding: 5% 15%;
+}
+
+.BadgeAdmin .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.BadgeAdmin button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+
+.BadgeAdmin button.log-out {
+  background: #ea4335;
+  color: white;
+}
+
+.BadgeAdmin button.export {
+  margin-top: 2rem;
+  background: #0f9d58;
+  color: white;
+}
+
+.BadgeAdmin table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.BadgeAdmin td,
+.BadgeAdmin th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.BadgeAdmin tr:nth-child(even) {
+  background-color: #bee2ff;
+}
+
 @media only screen and (max-width: 600px) {
   .BadgeCollection .container {
     -ms-grid-columns: 1fr;
