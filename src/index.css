@@ -938,6 +938,23 @@ a {
   font-weight: 600;
 }
 
+.Team .container .team-section {
+  margin: 2rem 0;
+}
+
+.Team .container .team-section-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin: 5rem 0 0 0;
+}
+
+.Team .container .team-section .bar {
+  margin: 0 auto 3rem auto;
+  border-bottom: solid 2px #1f1534;
+  padding: 15px;
+  width: 25px;
+}
+
 .Team .container .team-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -947,14 +964,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Team .container .team-cards .team-card {
   border-radius: 2rem;
   padding: 2rem;
-  margin: 1rem;
+  margin: 1rem 2rem;
   -webkit-box-shadow: 10px 0px 50px rgba(229, 233, 246, 0.69);
           box-shadow: 10px 0px 50px rgba(229, 233, 246, 0.69);
   text-align: center;

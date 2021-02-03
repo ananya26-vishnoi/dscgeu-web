@@ -743,11 +743,23 @@ a {
 			}
 			margin-bottom: 2rem;
 		}
+		.team-section {
+			margin: 2rem 0;
+			&-heading {
+				font-size: 2rem;
+				text-align: center;
+				margin: 5rem 0 0 0;
+			}
+			.bar {
+				margin: 0 auto 3rem auto;
+				@include underscore();
+			}
+		}
 		.team-cards {
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
-			justify-content: space-around;
+			justify-content: center;
 			.team-card {
 				img {
 					width: 15rem;
@@ -756,7 +768,7 @@ a {
 				}
 				border-radius: 2rem;
 				padding: 2rem;
-				margin: 1rem;
+				margin: 1rem 2rem;
 				box-shadow: 10px 0px 50px rgba(229, 233, 246, 0.69);
 				text-align: center;
 				.name {
@@ -937,7 +949,7 @@ h2.bar {
 	}
 
 	button {
-    cursor: pointer;
+		cursor: pointer;
 		outline: none;
 		border: none;
 		padding: 0.7rem 1.4rem;
