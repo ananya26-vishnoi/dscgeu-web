@@ -1036,7 +1036,14 @@ h2.bar {
 }
 
 .BadgeCollection .coming-soon-container {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.BadgeCollection .coming-soon-text {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: #ea4335;
+  margin-top: 0.5rem;
 }
 
 .BadgeCollection .coming-soon {
@@ -1046,7 +1053,8 @@ h2.bar {
   padding: 0.5rem 1rem;
   font-weight: 700;
   border-radius: 5rem;
-  color: #0f9d58;
+  color: #ea4335;
+  background: #f9cac9;
 }
 
 .BadgeCollection .container {
@@ -1065,6 +1073,8 @@ h2.bar {
 }
 
 .BadgeCollection .container .left .head {
+  -webkit-filter: blur(0.2rem);
+          filter: blur(0.2rem);
   margin-bottom: 3rem;
 }
 
@@ -1076,6 +1086,11 @@ h2.bar {
 
 .BadgeCollection .container .left .head p {
   color: #474747;
+}
+
+.BadgeCollection .container .left .form {
+  -webkit-filter: blur(0.2rem);
+          filter: blur(0.2rem);
 }
 
 .BadgeCollection .container .left .form-grp {

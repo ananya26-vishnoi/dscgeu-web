@@ -811,16 +811,21 @@ h2.bar {
 .BadgeCollection {
 	background: #f2f3f5;
 	.coming-soon-container {
-		margin-bottom: 1rem;
+		margin-bottom: 3rem;
+	}
+	.coming-soon-text {
+		margin-left: 0.5rem;
+		font-size: 0.9rem;
+		color: #ea4335;
+		margin-top: 0.5rem;
 	}
 	.coming-soon {
 		width: max-content;
 		padding: 0.5rem 1rem;
 		font-weight: 700;
 		border-radius: 5rem;
-		color: #0f9d58;
-		// color: #fff;
-		// background: lighten($color: #1b5e20, $amount: 30);
+		color: #ea4335;
+		background: lighten($color: #ea433f, $amount: 30);
 	}
 	.container {
 		user-select: none;
@@ -831,6 +836,7 @@ h2.bar {
 
 		.left {
 			.head {
+				filter: blur(0.2rem);
 				h1 {
 					color: $blue;
 					font-weight: 800;
@@ -842,6 +848,7 @@ h2.bar {
 				margin-bottom: 3rem;
 			}
 			.form {
+				filter: blur(0.2rem);
 				&-grp {
 					display: grid;
 					width: 100%;

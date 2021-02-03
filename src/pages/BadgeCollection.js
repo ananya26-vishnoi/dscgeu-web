@@ -22,6 +22,17 @@ const BadgeCollection = () => {
 		<div className="BadgeCollection">
 			<div className="container">
 				<div className="left">
+					<div className="coming-soon-container">
+						<div className="coming-soon">COMING SOON</div>
+						<div className="coming-soon-text">
+							You all will be able to claim your badges very soon.{" "}
+							<br />
+							<strong>
+								NOTE : YOU NEED TO HAVE ATTENED ATLEAST ONE
+								EVENT TO CLAIM YOUR BADGE
+							</strong>
+						</div>
+					</div>
 					<div className="head">
 						<h1>Collect your badge</h1>
 						<p>
@@ -86,8 +97,25 @@ const BadgeCollection = () => {
 								</div>
 							)}
 						</div>
-						<div className="errors"></div>
-						<button type="submit" className="form-submit">
+						<div className="errors">
+							{errors.fullname && (
+								<div className="error">
+									Make sure you have filled Full Name Properly
+								</div>
+							)}
+							{errors.useremail && (
+								<div className="error">
+									Make sure you have filled Email Properly
+								</div>
+							)}
+							{errors.profileLink && (
+								<div className="error">
+									Make sure you have filled Profile Link
+									Properly
+								</div>
+							)}
+						</div>
+						<button disabled type="submit" className="form-submit">
 							Submit
 						</button>
 					</form>
